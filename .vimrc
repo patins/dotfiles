@@ -1,7 +1,6 @@
 syntax on
 set nocompatible
-filetype off
-
+filetype off 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -20,7 +19,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'editorconfig/editorconfig-vim'
 
 Plugin 'tpope/vim-surround'
-
+Plugin 'tpope/vim-speeddating'
+Plugin 'jceb/vim-orgmode'
 "Plugin 'scrooloose/syntastic'
 
 Plugin 'tpope/vim-fugitive'
@@ -41,6 +41,9 @@ hi Normal ctermbg=none
 "hi Normal ctermfg=white ctermbg=NONE
 "hi SpecialKey ctermfg=none 
 "hi NonText ctermbg=none
+"set t_Co=256
+"let g:zenburn_transparent = 1
+"colors zenburn
 
 " Airline
 let g:airline_powerline_fonts = 1
@@ -73,3 +76,4 @@ map <Up> <Nop>
 map <Down> <Nop>
 
 autocmd Filetype python match Error /\s\+$/
+autocmd Filetype html setlocal shiftwidth=2 tabstop=2
