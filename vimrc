@@ -4,8 +4,6 @@ call plug#begin()
 "Plug 'kchmck/vim-coffee-script'
 "Plug 'rakr/vim-one'
 "Plug 'altercation/vim-colors-solarized'
-"Plug 'kien/ctrlp.vim'
-Plug 'mileszs/ack.vim'
 
 Plug 'chriskempson/base16-vim'
 
@@ -13,11 +11,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
 
-"Plug 'tpope/vim-surround'
-"Plug 'tpope/vim-speeddating'
-"Plug 'jceb/vim-orgmode'
-"Plug 'scrooloose/syntastic'
-"Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 
 call plug#end()
@@ -44,22 +38,9 @@ hi Normal ctermbg=none
 let g:airline_powerline_fonts = 1
 set laststatus=2
 
-" CtrlP
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.py[ocd]
-if executable('ag')
- set grepprg=ag\ --nogroup\ --nocolor
- let g:ctrlp_user_command='ag %s -l --nocolor -g ""'
- let g:ctrlp_use_caching=0
- let g:ackprg = 'ag --vimgrep'
-endif
-
-" Syntastic
-"let g:syntastic_python_flake8_args='--ignore=E302,E501'
-let g:syntastic_python_checker_args='--disable R,C'
-let g:syntastic_python_checkers=['pylint']
 " Relative Line Numbers
 set relativenumber
-set number
+" set number
 
 " OSX Clipboard
 set clipboard=unnamed

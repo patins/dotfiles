@@ -3,3 +3,8 @@ if status --is-interactive
 end
 
 status --is-interactive; and source (pyenv init -|psub)
+
+export FZF_DEFAULT_COMMAND='ag -g ""'
+
+
+
