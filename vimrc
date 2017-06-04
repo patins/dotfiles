@@ -1,31 +1,26 @@
-syntax on
-set nocompatible
-filetype off 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin()
 
-Plugin 'gmarik/Vundle.vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
-"Plugin 'rakr/vim-one'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'kien/ctrlp.vim'
-Plugin 'mileszs/ack.vim'
+"Plug 'pangloss/vim-javascript'
+"Plug 'kchmck/vim-coffee-script'
+"Plug 'rakr/vim-one'
+"Plug 'altercation/vim-colors-solarized'
+"Plug 'kien/ctrlp.vim'
+Plug 'mileszs/ack.vim'
 
-Plugin 'chriskempson/base16-vim'
+Plug 'chriskempson/base16-vim'
 
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'editorconfig/editorconfig-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'editorconfig/editorconfig-vim'
 
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-speeddating'
-Plugin 'jceb/vim-orgmode'
-"Plugin 'scrooloose/syntastic'
+"Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-speeddating'
+"Plug 'jceb/vim-orgmode'
+"Plug 'scrooloose/syntastic'
+"Plug 'tpope/vim-fugitive'
+Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 
-Plugin 'tpope/vim-fugitive'
-
-call vundle#end()
+call plug#end()
 
 filetype plugin indent on
 
