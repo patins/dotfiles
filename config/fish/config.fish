@@ -1,9 +1,19 @@
+function light
+	eval sh $HOME/.config/base16-shell/scripts/base16-google-light.sh
+	echo "colorscheme base16-google-light" > $HOME/.vimrc_background
+end
+
+function dark
+	eval sh $HOME/.config/base16-shell/scripts/base16-google-dark.sh
+	echo "colorscheme base16-google-dark" > $HOME/.vimrc_background
+end
+
 if status --is-interactive
-    eval sh $HOME/.config/base16-shell/scripts/base16-google-dark.sh
+	dark
 end
 
 function setenv
-    set -gx $argv
+	set -gx $argv
 end
 
 status --is-interactive; and source (pyenv init -|psub)
