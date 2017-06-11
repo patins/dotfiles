@@ -13,5 +13,4 @@ fish_vi_key_bindings
 
 export FZF_DEFAULT_COMMAND='ag -g ""'
 
-
-
+export GIT_EDITOR=nvim
