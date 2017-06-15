@@ -51,7 +51,7 @@ map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
 
-set tabstop=2 shiftwidth=2 noexpandtab
+set tabstop=2 shiftwidth=2 expandtab
 
 autocmd Filetype python match Error /\s\+$/
 " autocmd Filetype html setlocal shiftwidth=2 tabstop=2
