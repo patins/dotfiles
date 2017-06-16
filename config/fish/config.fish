@@ -18,6 +18,8 @@ end
 
 status --is-interactive; and source (pyenv init -|psub)
 
+status --is-interactive; and source (rbenv init -|psub)
+
 set fish_greeting ""
 fish_vi_key_bindings
 
