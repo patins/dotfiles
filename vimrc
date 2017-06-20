@@ -12,6 +12,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
 
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 
 call plug#end()
