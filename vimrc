@@ -14,6 +14,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+Plug 'benmills/vimux'
 
 call plug#end()
 
@@ -52,7 +53,15 @@ map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
 
+nnoremap <silent> <C-t> :FZF <cr>
+nnoremap <silent> <A-p> :Buffers <cr>
+nnoremap <silent> <A-S-p> :History <cr>
+
+map <Leader>vl :VimuxRunLastCommand<CR>
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vq :VimuxCloseRunner<CR>
+
 set tabstop=2 shiftwidth=2 expandtab
 
-autocmd Filetype python match Error /\s\+$/
-" autocmd Filetype html setlocal shiftwidth=2 tabstop=2
+"autocmd Filetype python match Error /\s\+$/
+"autocmd Filetype html setlocal shiftwidth=2 tabstop=2
